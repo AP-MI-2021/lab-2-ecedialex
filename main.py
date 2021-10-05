@@ -22,7 +22,7 @@ def get_largest_prime_below(n) -> int:
 	Output: minim - ultimul număr prim mai mic decât un număr dat.
 	'''
 	ok=0
-	for i in range(n-1,2,-1):
+	for i in range(n-1,1,-1):
 		if is_prime(i):
 			return i
 	return 0
