@@ -73,6 +73,8 @@ def test_get_perfect_squares():
 
 def get_leap_years(start: int, end: int) -> list[int] :
 	list=[]
+	if start > end:
+		start,end=end,start
 	for i in range (start, end+1):
 		if i % 4 ==0 and i % 100 !=0 :
 			list.append(i)
